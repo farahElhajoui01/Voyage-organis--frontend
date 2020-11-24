@@ -2,17 +2,19 @@
     padding-top: $navbar-padding-base;
     padding-bottom: $navbar-padding-base;
     min-height: 65px;
+    background-color: #e95e38;
+    color: white;
     //margin-bottom: 9px;
 
     a{
         vertical-align: middle;
 
         &:not(.btn):not(.dropdown-item){
-            color: $white-color;
+            color: white;
         }
 
         &.dropdown-item{
-            color: $default-color;
+            color: white;
         }
     }
 
@@ -21,15 +23,15 @@
     &.bg-white{
       .input-group .form-control,
       .input-group.no-border .form-control{
-        color: $default-color;
+        color: white;
 
         @include placeholder(){
-          color: $default-color;
+          color: white;
         };
       }
       .input-group-prepend .input-group-text i,
       .input-group-append .input-group-text i{
-        color: $default-color;
+        color: white;
         opacity: .5;
       }
     }
@@ -43,7 +45,7 @@
       .form-group-addon,
       .input-group-prepend .input-group-text,
       .input-group-append .input-group-text{
-        color: $default-color;
+        color: white;
 
         i {
           opacity: 1;
@@ -62,7 +64,7 @@
     }
     .logo{
         border-radius: 50%;
-        border: 1px solid #333;
+        border: 1px solid white;
         display: block;
         height: 40px;
         width: 40px;
