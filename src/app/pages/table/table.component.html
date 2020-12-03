@@ -192,10 +192,50 @@
                
                 <td>
                 <div class="col-md-6 update ml-auto mr-auto">
-                  <button type="submit" class="btn btn-primary btn-round">Réserver</button>
-                </div>
+                  <p>
+                    <button type="button" class="btn btn-primary btn-round " (click)="isCollapsed = !isCollapsed"
+                            [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+                            Réserver                    </button>
+                  </p>
+
+                 
+                 
+                    
+                  </div>
                 </td>
               </tr>
+             <tr>
+             
+              <div id="collapseExample" [ngbCollapse]="!isCollapsed">
+                <div class="card card-reservation-table">
+                  <div class="card-body">
+                    <span>Détails du tarif</span>
+                    <div class="table-responsive">
+                      <table class="table table-tarif">
+                        <thead class=" text-primary">
+                          <th>
+                            element 1
+                          </th>
+                          <th>
+                            element 2
+                          </th>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>200</td>
+                          <td>1500</td>
+                          </tr>
+                        </tbody>
+                        </table>
+                        </div>
+                  </div>
+                </div>
+              </div>
+             
+
+
+
+             </tr>
               <tr>
                 <td class="dates">
                  Départ : 12-12-2020

@@ -1,5 +1,7 @@
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { NgModule } from '@angular/core';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
 import { RouterModule } from '@angular/router';
 import { ToastrModule } from "ngx-toastr";
 
@@ -21,6 +23,7 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
   ],
   imports: [
     BrowserAnimationsModule,
+    NgbModule,
     RouterModule.forRoot(AppRoutes,{
       useHash: true
     }),

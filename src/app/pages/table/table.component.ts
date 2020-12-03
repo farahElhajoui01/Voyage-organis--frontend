@@ -5,6 +5,7 @@ declare interface TableData {
     dataRows: string[][];
 }
 
+
 @Component({
     selector: 'table-cmp',
     moduleId: module.id,
